@@ -14,7 +14,7 @@ ADMINS = int(os.environ.get("ADMINS", "7616562927"))
 # MongoDB credentials
 MONGO_USERNAME = os.environ.get("MONGO_USERNAME", "creazysaikat")
 MONGO_PASSWORD = os.environ.get("MONGO_PASSWORD", "Saikat9735")
-MONGO_CLUSTER = os.environ.get("MONGO_CLUSTER", "cluster0.y2ku5.mongodb.net")
+MONGO_CLUSTER = os.environ.get("MONGO_CLUSTER", "cluster0")
 
 # Encode MongoDB credentials
 encoded_username = quote_plus(MONGO_USERNAME)
