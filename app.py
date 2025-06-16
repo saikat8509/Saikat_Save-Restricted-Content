@@ -1,9 +1,10 @@
 from flask import Flask
-app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return 'Save Restricted Content Bot is running!'
+  app = Flask(__name__)
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080)
+  @app.route('/')
+  def health_check():
+      return "Bot is running", 200
+
+  if __name__ == "__main__":
+      app.run(host="0.0.0.0", port=8080)
